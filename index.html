@@ -11,6 +11,15 @@
     <a id="link" href="#">
         <button id="btn">Go</button> 
     </a>
+    
+    <script>
+        const btn = document.getElementById('btn');
 
+        btn.addEventListener('click', () => {
+            const inputValue = document.getElementById('input-value').value;
+            const link = document.getElementById('link');
+            link.href = 'http://localhost:' + inputValue;
+        })
+    </script>
 </body>
 </html>
