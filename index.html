@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *, *::before, *::after {padding: 0; margin: 0; box-sizing:border-box;}
+    </style>
     <title>Go to Localhost</title>
 </head>
-<body>
-    <div>
-        <h1>Go to Localhost!</h1>
-        <span>Select port number and go:</span>
-    </div>
+<body style="background-color: #f2f9f1; color: #5c715e;">
+
+    <main>
+        <div>
+            <h1>Go to Localhost!</h1>
+            <span>Select port number and go:</span>
+        </div>
     
-    <div>
-        <input type="number" value="5173" id="input-value">
-        <a id="link" href="#">
-            <button id="btn">Go</button> 
-        </a>
-    </div>
+        <div>
+            <input 
+                style="background-color: #ddeedf; color: #5c715e; border-style: none;"
+                type="number" value="5173" id="input-value">
+            <a id="link" href="#">
+                <button 
+                    style="background-color: #b6cdbd; color: #f2f9f1; border-style: none;"
+                    id="btn"
+                >
+                        Go
+                </button> 
+            </a>
+        </div>
+    </main>
 
     <script>
         const btn = document.getElementById('btn');
